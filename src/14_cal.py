@@ -31,6 +31,21 @@ import sys
 import calendar as c
 from datetime import datetime as dt
 
-today = dt.
-print(today)
-# print(c.monthcalendar(today))
+year = dt.today().year
+month = dt.today().month
+arguements = len(sys.argv)
+
+def buildCalendar(a=year, b=month):
+  print(c.month(year, month))
+
+if arguements == 1:
+  pass
+
+elif arguements == 2:
+  month = int(sys.argv[1])
+
+elif arguements == 3:
+  month = int(sys.argv[1])
+  year = int(sys.argv[2])
+
+buildCalendar()
