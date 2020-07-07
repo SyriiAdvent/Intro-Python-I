@@ -8,6 +8,27 @@ Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-compr
 for more info regarding list comprehensions.
 """
 
+
+"""
+List Comprehensions
+"""
+odds = [1, 3, 5, 7, 9]
+# like map
+print([x+1 for x in odds])
+
+# like filter
+print([x for x in odds if 25 % x == 0])
+
+# general form
+# [<map expression> for <name> in <sequence expression> if <filter expression>]
+
+"""
+Dictionary Comprehensions
+"""
+
+
+
+
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 # [num for num in range(0,50) if num % 3 == 0]
 y = [num for num in range(1, 6)]
